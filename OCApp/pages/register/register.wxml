@@ -1,0 +1,53 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+
+  <view class="index-hd">
+    <image class="index-logo" src="../../image/logo.png"></image>
+    <view class="index-desc">欢迎使用甲骨文大连分公司微信小程序系统</view>
+  </view>
+
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">用户名</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入用户名" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">Email</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入甲骨文邮箱地址" />
+      </view>
+    </view>
+  </view>
+
+
+
+  <checkbox-group bindchange="bindAgreeChange">
+    <label class="weui-agree" for="weuiAgree">
+                <view class="weui-agree__text">
+                    <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="false" />
+                    <view class="weui-agree__checkbox-icon">
+                        <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+                    </view>
+                    阅读并同意<navigator url="" class="weui-agree__link">《相关条款》</navigator>
+                </view>
+            </label>
+  </checkbox-group>
+
+
+  <view class="alignRight">
+
+    <view class="button-sp-area">
+
+      <button class="weui-btn mini-btn" type="primary" size="mini">确认</button>
+
+      <button class="weui-btn mini-btn" type="default" size="mini">取消</button>
+
+    </view>
+
+  </view>
+</view>

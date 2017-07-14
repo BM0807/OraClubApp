@@ -1,0 +1,28 @@
+.alignRight{
+
+  display: flex;
+  justify-content: flex-end;
+
+  margin:10px
+
+}
+
+.mini-btn{
+    margin: 10rpx;
+}
+.index-hd {
+  padding: 80rpx;
+  text-align: center;
+}
+
+.index-logo {
+  justify-content: center;
+  width: 86rpx;
+  height: 86rpx;
+  
+}
+.index-desc {
+  margin-top: 20rpx;
+  color: #888888;
+  font-size: 28rpx;
+}
